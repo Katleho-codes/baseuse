@@ -1,3 +1,5 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # Baseuse — Browser Feature Baseline Analyzer for VS Code
 
 Baseuse is a VS Code extension that scans your CSS, HTML, and JavaScript for web features and functions, checks their browser support against a baseline, and provides inline guidance, tooltips, and quick fixes.

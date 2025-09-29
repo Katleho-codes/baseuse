@@ -59,5 +59,18 @@
   "dependencies": {
     "axios": "^1.12.2",
     "web-features": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katleho-codes/baseuse.git"
+  },
+  "keywords": [
+    "baseline"
+  ],
+  "author": "katleho mabala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Katleho-codes/baseuse/issues"
+  },
+  "homepage": "https://github.com/Katleho-codes/baseuse#readme"
 }
