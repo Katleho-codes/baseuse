@@ -1,0 +1,63 @@
+{
+  "name": "baseuse",
+  "displayName": "baseuse",
+  "description": "Baseuse is a VS Code extension that scans your CSS, HTML, and JavaScript for web features and functions, checks their browser support against a baseline, and provides inline guidance, tooltips, and quick fixes.",
+  "version": "0.0.1",
+  "type": "module",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:css",
+    "onLanguage:scss",
+    "onLanguage:html",
+    "onLanguage:javascript"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "baseuse.analyzeBaseline",
+        "title": "Baseline Analyze"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "baseuse",
+          "title": "Baseuse",
+          "icon": "resources/icon.png"
+        }
+      ]
+    },
+    "views": {}
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.104.0",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.34.0",
+    "postcss": "^8.5.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "web-features": "^3.0.0"
+  }
+}
